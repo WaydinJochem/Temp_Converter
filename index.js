@@ -1,10 +1,18 @@
 let celcius = document.querySelector("#degrees");
-let faren = document.querySelector("#faren");
+let faren = document.querySelector(".faren");
 let outputValue = document.querySelector("#display");
-let C, TC;
+let outputReverse = document.querySelector(".diplay");
 
-function calc1(params) {
+let C, FT, F, CT;
+
+function calc1() {
     let C = celcius.value;
-    let TC = (C * 9/5) + 32;
-    outputValue.innerText = TC + "F";
+    let FT = (C * 9/5) + 32;
+    outputValue.value = FT;
+    
+}
+function calc2() {
+    let F = faren.value;
+    let CT = (F - 32) * (5/9);
+    outputReverse.value = CT;
 }
