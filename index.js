@@ -10,6 +10,6 @@ function calc1() {
  function calc2() {
     let F = outputValue.value;
     let FT = (F - 32) * (5/9);
-    celcius.value = FT;
+    celcius.value = FT.toFixed(2);
  }
 
