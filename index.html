@@ -13,12 +13,16 @@
 <div class="border border-2 p-2 row">
     <h3 class=" text-center col-sm-12"> Input Temperature </h3>
     <div class="row">
-        <input type="number" placeholder="0" id="degrees" oninput="calc1()" class="display2 col-3 mx-auto ">
-        <select name="" id="" class=" col-3 text-center mx-auto">
-            <option value="">Fahrenheit</option>
-            <option value="">Celcius</option>
-        </select>
-        <input type="number" id="display" placeholder="0" oninput="calc2()" class="faren col-3 mx-auto">
+        <div class="col-sm-3 d-flex"><span>Celius</span><input type="number" placeholder="0" id="degrees"><button
+                type="button" onclick="calc1()" class="d-block mx-auto">
+                ➡️
+            </button></div>
+
+
+        <div class="col-sm-3 d-flex mx-auto">
+            </button><span>Farenheit</span><input type="number" id="display" placeholder="0" class="faren"><button type="button" onclick="calc2()" class="d-block mx-auto">
+                ⬅️
+        </div>
     </div>
 
 
