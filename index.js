@@ -5,7 +5,7 @@ let C, FT, F, CT;
 function calc1() {
     let C= celcius.value;
     let CT = (C * 9/5) + 32;
-    outputValue.value = CT;
+    outputValue.value = CT.toFixed(2);
 }
  function calc2() {
     let F = outputValue.value;
